@@ -1,7 +1,7 @@
 
 # 📊 vidmetrics-dynamics-demo
 
-![Repository logo](/img/bg.jpg)
+![Repository logo](/img/bg.png)
 A simple demo that compares video quality (PSNR/SSIM) across various codecs, bitrates, and levels of motion to study how compression affects dynamic scenes.  
 
 *Great for anyone who wants to get started with video quality evaluation.*
@@ -137,7 +137,7 @@ git-tutorial/
 ├── README.md
 ├── LICENSE
 └── img/
-    └── bg.jpg
+    └── bg.png
 ```
 
 
