@@ -6,29 +6,13 @@ A simple demo that compares video quality (PSNR/SSIM) across various codecs, bit
 
 *Great for anyone who wants to get started with video quality evaluation.*
 
+# WORK IN PROGRESS
 ## Description
 
 
 `vidmetrics-dynamics-demo` is an approachable project that demonstrates how video compression affects perceived quality using objective metrics such as **PSNR** and **SSIM**, with a focus on **scene dynamics** (amount of motion), **codecs**, **bitrates**, and **resolutions**.
 
 This project is ideal for anyone interested in video quality evaluation, media encoding, or understanding how different codecs impact video quality, especially in dynamic scenes.
-
-
-### Key Features
-
--   Explanation of key concepts such as:
-    
-    -   **Raw YUV format**
-        
-    -   **H.264 / H.265 / VP9 codecs**
-        
-    -   **Bitrate** and its effect on video quality
-        
--   A full set of commands used in the processing pipeline:
-    
-    -   All **FFmpeg** commands included
-        
-    -   Each step explained with comments and usage examples
         
 
 
@@ -36,7 +20,7 @@ This project is ideal for anyone interested in video quality evaluation, media e
 
 1.  The project begins with **2 original source video files** containing varying levels of motion.
     
-2.  It processes these files and generates **48 output files** with the following parameters:
+2.  It processes these files and generates **50 output files** with the following parameters:
     
     -   **3 codecs**: H.264, H.265, VP9
         
@@ -81,6 +65,10 @@ This project is ideal for anyone interested in video quality evaluation, media e
 ffmpeg -version
 ```
 3. If everything is correctly installed, you should see FFmpeg version information.
+```bash
+ffmpeg version 2025-03-31-git-35c091f4b7-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+```
 
 ![Win - verify](/img/win3.gif)
 
@@ -93,9 +81,54 @@ ffmpeg -version
 
 ## Installation*
 
+To get this repository on your computer:
+
+1. **Install Git (if not installed)**
+
+If you don't have Git installed, you can download and install it from [Git's official website](https://git-scm.com/downloads).
+
+2. **Clone the repository:**
+
+Open your command prompt and run the following command to clone the repository to your local machine:
+
+```bash
+git clone https://github.com/JacobLegume/vidmetrics-dynamics-demo
+```
+
+#### Download Video Sources
+The project is based on videos from [ultravideo.fi](https://ultravideo.fi/dataset.html). If you want to follow along:
+
+1. Go to the [UVG dataset page](https://ultravideo.fi/dataset.html) and choose a video.
+2. Take note of its details (length, frame rate).
+3. Download any version in **YUV RAW format**, e.g. 3840×2160 8-bit YUV RAW.
+4. Unzip the file into the cloned repository directory.
+
+#### Disclaimer and Attribution
+
+This project uses example video content from external sources for demonstration and evaluation purposes only.  The original video files are **not included in this repository**.
+
+Specifically, the demonstration uses videos from [ultravideo.fi](https://ultravideo.fi/dataset.html), which are licensed under [Creative Commons BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/). These materials are intended **only for non-commercial and educational use** in accordance with their license.
+
+If you use these videos in your own work, please cite the original authors:
+
+*A. Mercat, M. Viitanen, and J. Vanne, “[UVG dataset: 50/120fps 4K sequences for video codec analysis and development,](https://dl.acm.org/doi/abs/10.1145/3339825.3394937)” *Proc. ACM Multimedia Systems Conference (MMSys)*, Istanbul, Turkey, June 2020. [Tuni.fi](https://researchportal.tuni.fi/en/publications/uvg-dataset-50120fps-4k-sequences-for-video-codec-analysis-and-de) | [PDF](https://cris.tuni.fi/ws/portalfiles/portal/42239069/MMSys20_UVG_Dataset_Camera_ready.pdf)*
+
+The source code of this project is licensed under the MIT License and does not include any copyrighted
+video data.
+
+---
 
 ## Usage Example*
 
+**placeholder for an actual usage example**
+
+**placeholder for an actual usage example**
+
+**placeholder for an actual usage example**
+
+**placeholder for an actual usage example**
+
+---
 
 ## Project Structure*
 
@@ -104,6 +137,7 @@ git-tutorial/
 ├── README.md
 ├── LICENSE
 └── img/
+    └── bg.jpg
 ```
 
 
@@ -113,7 +147,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Authors
 
-- Jakub W. - Main Author - [JacobLegume](https://github.com/JacobLegume)
+- Jakub Warzych - Main Author - [JacobLegume](https://github.com/JacobLegume)
 
 ## Contributing
 
